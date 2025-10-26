@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Minimal Weather App</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>Minimal Weather</h1>
+      </header>
+
+      <div class="search-header">
+        <input
+          type="search"
+          placeholder="Enter city"
+          aria-label="City"
+          class="search-input"
+        />
+        <button class="search-button" type="button" title="non-functional">Search</button>
+      </div>
+
+      <section class="card" aria-labelledby="weather-heading">
+        <div class="row">
+          <div class="location">
+            <span class="city">San Francisco</span>• 
+            <span class="country">CA</span>
+          </div>
+          <div class="updated"><span class="day">Monday</span> · <span class="time">9:30</span></div>
+        </div>
+
+        <div class="main">
+          <img class="image" src="images/clouds.png">
+          <div>
+            <div class="temp">18°C</div>
+            <div class="desc">Partly cloudy</div>
+          </div>
+        </div>
+
+        <div class="details" aria-hidden="false">
+          <div>
+            <span class="small ">Humidity</span>
+            <strong class="humidity">62%</strong>
+          </div>
+          <div>
+            <span class="small ">Wind</span>
+            <strong class="wind" >8 km/h</strong>
+          </div>
+          <div>
+            <span class="small">Feels like</span>
+            <strong class="feels">17°C</strong>
+          </div>
+        </div>
+
+        <footer>Data by WeatherAPI.com</footer>
+      </section>
+    </div>
+  </body>
+  <script type="module" src="main.js"></script>
+</html>
